@@ -1,0 +1,30 @@
+[package]
+name = "superswap-sol"
+version = "0.1.0"
+description = "SuperSwap Solana Program for EVM-SVM cross-chain swaps via Across and Jupiter"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "superswap_sol"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.30.1"
+anchor-spl = "0.30.1"
+solana-program = "1.18.22"
+spl-token = "4.0"
+spl-associated-token-account = "2.3"
+borsh = "0.10"
+
+[dev-dependencies]
+solana-program-test = "1.18.22"
+solana-sdk = "1.18.22"
+tokio = "1.40"
+
