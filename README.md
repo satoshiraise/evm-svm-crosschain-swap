@@ -15,10 +15,10 @@ SuperSwap-Sol is a trustless, on-chain solution for executing cross-chain swaps 
 ## Architecture
 
 ```
-┌─────────────┐         ┌─────────────┐         ┌─────────────┐
+┌─────────────┐          ┌─────────────┐         ┌─────────────┐
 │  EVM Chain  │────────▶│   Across    │────────▶│   Solana    │
-│   (Base)    │         │  Protocol   │         │  SuperSwap  │
-└─────────────┘         └─────────────┘         └─────────────┘
+│   (Base)    │          │  Protocol   │         │  SuperSwap  │
+└─────────────┘          └─────────────┘         └─────────────┘
                                                         │
                                                         ▼
                                                  ┌─────────────┐
